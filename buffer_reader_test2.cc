@@ -14,7 +14,7 @@ extern "C" {
 #include "stats.h"
 extern stats_t* stats;
 
-extern int globInd;
+extern int lo;
 extern const uint8* globBuf;
 extern size_t globBufSize;
 
