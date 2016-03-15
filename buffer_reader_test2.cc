@@ -4,6 +4,7 @@
 		hello
 		mor
 		check
+		blah blah
  */
 #include <gtest/gtest.h>
 #include "test_utils.h"
