@@ -1,7 +1,6 @@
 /*
  *  Created on: Dec 22, 2014
- *      Author: Mor
-		hello
+ *      Author: Rotem
 		mor
 		check
  */

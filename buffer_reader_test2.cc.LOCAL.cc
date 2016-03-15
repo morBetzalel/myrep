@@ -1,9 +1,6 @@
 /*
  *  Created on: Dec 22, 2014
  *      Author: Mor
-		hello
-		mor
-		check
  */
 #include <gtest/gtest.h>
 #include "test_utils.h"
