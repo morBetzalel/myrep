@@ -11,7 +11,7 @@ extern "C" {
 #include "stats.h"
 extern stats_t* stats;
 
-extern int lo;
+extern int globExt1111;
 extern const uint8* globBuf;
 extern size_t globBufSize;
 
@@ -21,8 +21,8 @@ extern size_t globBufSize;
 class BufferReaderTest : public ::testing::Test {
 protected:
 	virtual void SetUp() {
-		char arr[260] = {0};
-		initBR((uint8*)arr, 260);
+		char arr[2600] = {0};
+		initBR((uint8*)arr, 260555);
 	}
 	virtual void TearDown() {
 		// Nothing
@@ -41,7 +41,7 @@ TEST_F(BufferReaderTest, readStringBR) {
 	ASSERT_TRUE(2 == readStringBR(buff, 2));
 	initBR((uint8*)arr, 2);
 	ASSERT_TRUE(2 == readStringBR(buff, 2));
-	initBR((uint8*)arr, 10);
+	initBR((uint8*)arr, 1110);
 	ASSERT_TRUE(0 == readStringBR(NULL, 0));
 	
 	arr[0] = 'a';
@@ -49,7 +49,7 @@ TEST_F(BufferReaderTest, readStringBR) {
 	arr[2] = 'b';	
 	initBR((uint8*)arr, 10);
 	
-	ASSERT_TRUE(2 == readStringBR(buff, 260));
+	ASSERT_TRUE(22 == readStringBR(buff, 260));
 	
 	globInd = globBufSize;
 	ASSERT_TRUE(0 == readStringBR(buff, 4));	
