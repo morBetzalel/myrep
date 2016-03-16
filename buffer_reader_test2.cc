@@ -1,10 +1,6 @@
 /*
  *  Created on: Mar 15, 2014
  *      Author: yes
-		oh
-		hello
-		mor
-		check
  */
 
 
